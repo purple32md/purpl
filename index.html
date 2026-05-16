@@ -101,7 +101,24 @@
   setTimeout(applyPurplPatch, 300);
   setTimeout(applyPurplPatch, 1200);
 })();
-</script></head><body><style>
+</script><style id="purpl-autoplay-style">
+  .GUNS__90-2f1123ac-d6ec9f60-17266127 {
+    cursor: pointer !important;
+  }
+
+  .GUNS__90-2f1123ac-d6ec9f60-17266127.purpl-music-playing {
+    box-shadow: 0 0 24px rgba(255, 197, 211, 0.48) !important;
+  }
+
+  .GUNS__90-2f1123ac-d6ec9f60-17266127.purpl-music-needs-click {
+    animation: purplMusicPulse 1.35s ease-in-out infinite;
+  }
+
+  @keyframes purplMusicPulse {
+    0%, 100% { filter: drop-shadow(0 0 0 rgba(255, 197, 211, 0)); }
+    50% { filter: drop-shadow(0 0 12px rgba(255, 197, 211, 0.85)); }
+  }
+</style></head><body><style>
                 html {
                    direction: ltr;    
                 }
@@ -118,7 +135,7 @@
                 html {
                    direction: ltr;    
                 }
-                </style><div class="GUNS__42-1edfda65-54d16e0a-eeeb8e16" style="background-image: url(&quot;https://r2.guns.lol/2a5d6081-ba91-49ea-9c01-87c9ff351d4b.webp&quot;);"></div><audio src="https://r2.guns.lol/b4c079b1-6f51-4ff4-a618-d311d9a5ec8e.mp3" loop=""></audio><div class="GUNS__43-018c3d03-bfee722b-0ec7977f GUNS__da-7d43e412-1de3c2c1-729cfd30" style="pointer-events: none; display: none;"><div class="GUNS__33-613bee8a-0ca69d49-3acca887" style="font-weight: 700; font-size: 30px;">click to enter...</div></div><div class="aurora-container"><canvas width="1740" height="942" style="width: 1740px; height: 942px; background-color: transparent;"></canvas></div><style>
+                </style><div class="GUNS__42-1edfda65-54d16e0a-eeeb8e16" style="background-image: url(&quot;https://r2.guns.lol/2a5d6081-ba91-49ea-9c01-87c9ff351d4b.webp&quot;);"></div><audio id="purpl-music-player" src="./@purrp_files/purpl-music.mp3" preload="auto" autoplay loop playsinline></audio><div class="GUNS__43-018c3d03-bfee722b-0ec7977f GUNS__da-7d43e412-1de3c2c1-729cfd30" style="pointer-events: none; display: none;"><div class="GUNS__33-613bee8a-0ca69d49-3acca887" style="font-weight: 700; font-size: 30px;">click to enter...</div></div><div class="aurora-container"><canvas width="1740" height="942" style="width: 1740px; height: 942px; background-color: transparent;"></canvas></div><style>
                 ::-moz-selection {
                     background: #ffc5d3;
                     color: #ffc5d3;
@@ -157,4 +174,98 @@
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="1.96 4.26 20.03 15.53" fill="currentColor"><path d="M14.82 4.26a10.14 10.14 0 0 0-.53 1.1a14.66 14.66 0 0 0-4.58 0a10.14 10.14 0 0 0-.53-1.1a16 16 0 0 0-4.13 1.3a17.33 17.33 0 0 0-3 11.59a16.6 16.6 0 0 0 5.07 2.59A12.89 12.89 0 0 0 8.23 18a9.65 9.65 0 0 1-1.71-.83a3.39 3.39 0 0 0 .42-.33a11.66 11.66 0 0 0 10.12 0q.21.18.42.33a10.84 10.84 0 0 1-1.71.84a12.41 12.41 0 0 0 1.08 1.78a16.44 16.44 0 0 0 5.06-2.59a17.22 17.22 0 0 0-3-11.59a16.09 16.09 0 0 0-4.09-1.35zM8.68 14.81a1.94 1.94 0 0 1-1.8-2a1.93 1.93 0 0 1 1.8-2a1.93 1.93 0 0 1 1.8 2a1.93 1.93 0 0 1-1.8 2zm6.64 0a1.94 1.94 0 0 1-1.8-2a1.93 1.93 0 0 1 1.8-2a1.92 1.92 0 0 1 1.8 2a1.92 1.92 0 0 1-1.8 2z"></path></svg>
     <span>Discord</span>
   </a>
-</div><script>(self.__next_s=self.__next_s||[]).push([0,{"children":"const workerScript = `import init, { GunsSolver } from 'https://assets.guns.lol/wasm/gpp_gunslol.js';self.onmessage = async function (event) {const { _2xa, _org_ts, _n, d, o09 } = event.data;await init();const _get_s = new GunsSolver(o09, parseInt(d), _org_ts, _n, _2xa);const ts = Math.floor(Date.now() / 1000);const _tsoff = ts - Number(_org_ts);const tsp = ts - _tsoff;const _res = await _get_s.solve_pow();if (_res && _res._oo && _res.seal) {self.postMessage({ _n, o09, _res, _2xa, tsp });}};`;const blob = new Blob([workerScript], { type: \"application/javascript\" });const worker = new Worker(URL.createObjectURL(blob), { type: \"module\" });const _gs_sets = {_n: 'aJxcHnTeblvj3xca8Yjzm1IpJT5oBDNj',_tsp: null,_p: '',_seal: '',__ps: '',o09: '3c303c4db9d938049b0f5e1a901e9eb3aceb5e5876137969b0974f39a4aff2ce',_2xa: 'oUAFKDUfEgQEAwACASrMufjeQcnfNWYyZDllNWNiZjNhMDYzMDkyYzM4ZTg1NWVhZTMzYzEyMWE5MmE3OGZiNTgxYWUzMGZlZmJkYjg5MjD13sBpnVbXxg',__s: '3',_org_ts: \"1778956169\",};worker.postMessage({_n: _gs_sets._n,d: 5,_2xa: _gs_sets._2xa,o09: _gs_sets.o09,_org_ts: _gs_sets._org_ts});worker.onmessage = async function (event) {const { _res, o09, tsp, _n, _2xa } = event.data;if (_res !== undefined) {await getResult(_res);}};","id":"_gpp_2pkvinebmmlb"}])</script><div class="cf-turnstile" data-sitekey="0x4AAAAAAAgU7T2niLQD-TLm" data-callback="getToken" style="display: none;"><div><template shadowrootmode="closed"><iframe src="https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/turnstile/f/ov2/av0/rch/ihlyx/0x4AAAAAAAgU7T2niLQD-TLm/auto/fbE/new/normal?lang=auto" allow="cross-origin-isolated; fullscreen; autoplay; keyboard-map; gamepad" sandbox="allow-same-origin allow-scripts allow-popups" id="cf-chl-widget-ihlyx" tabindex="-1" title="Виджет с действием &quot;challenge&quot; Cloudflare" aria-hidden="true" style="border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; overflow: hidden; width: 1px; height: 1px; opacity: 0.01; position: fixed; left: 0px; top: 0px; visibility: visible; pointer-events: none; z-index: -1;"></iframe></template><input type="hidden" name="cf-turnstile-response" id="cf-chl-widget-ihlyx_response" value="0.Bu6Uxj2aztGIiCK3OyYt5NhJ6lHtbZLTqvFWYAoDWpEVbNmvQLFZLKxIZdNRcoLxtzVo0Ggf9S3Ukb03UET0MZbWCl8ir9-UQ6uf_wp7ewDuSNjIfdilME5MgAU2SW7L7D5_T3B_ZoqIa4ArOwOOQFcMX5vwnkyMv3JmR-8p4XoiiLhIxeDm65yDn_ZVhTtSNVOlOvTXrlOPoMSM5CairY0ntd1_aY6OeHDXaFQp1Xp2UtzTa7E4CjmeqttPerLGSTMuUF4ssjjkdIgjFsO60D2DbzPYYFjfm_UfDuZMYnNY57H7erl23_0hooWIjtBoIWZev9gBJn0Pp2Ty8y4bprXj6m5WnqpzhtqLav0-rdW7meIz5kaaDm83puxLfoa8RuC_0bzVaRvWq23mIWtkKvoFg8c4f8ue5sl8z7RzuSNk9m78A60zvrUu2ENFh81GXIn3CGSA_hH7c10hxwRMbeSPVevjRlLkmcpVItCBqK7fTGAU7kfSJ08-PkLO8BUiO2lGQRJUV5Q7QIMeXxzEOIDG9NsgFWSGWcytP7YiRYxOT_2s9USNmwvN6iwSIQqOzuTxm4ZjY2Rs6emhWraAymN9nMRJEaFB0Xaz-3LS9lOqmL4QkRMXzba8BcLiN2DaonegvpvoxqD1q2vI1nr8NAQYNiFeaRmNiQTPf20BDpqHLf5uRkjRatmR9aiw_5XQsM0Npfoz-kwpPEBDu4xYrNBEHTkvrRODVISG4meNDlLuQCvHBuNZS4excTM0Yx42glzX5AL8kREXWPr-h-MTM6sCFBegrmG7hGph2j1ZGCiCxV2o1_3Q1RfBi3G7CrTE5ED8L6RQ0UUdADnfRkyEOtK5pIfDZ5Q5SJjLsHJVepEQWJUnaN-HpT0v_Lm9rDw2P4Tvziu1djrQxBhnaRcPqVvkV0_9oIOKqdWZ9kNTYwCIHvaP9p1ZUJRJ3XuI0EYQ.8OhemXhBWB24rkCGfYqbPg.45806b5e3b231d57463976e769bae05f873459aa4cc1ca266d1c5a70f73a2d21"></div></div><div class="GUNS__c4-52afb1ed-980a1997-1f6253bb false" style="bottom: 12px; left: 15px;"><span class="GUNS__ba-7f5364ea-c3a36c5d-b0f3d011 "><span style="font-weight: 550; font-size: 14px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 9a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5a5 5 0 0 1 5-5a5 5 0 0 1 5 5a5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5"></path></svg> 215</span></span></div></div></div></div></div></div><script src="./@purrp_files/latest.js.Без названия" data-collect-dnt="true" id="_sa" data-nscript="afterInteractive"></script><script src="./@purrp_files/cursor-effects.js.Без названия" id="_cursor" data-nscript="afterInteractive"></script><div></div><script src="./@purrp_files/api.js.Без названия" id="_turnstile" data-nscript="afterInteractive"></script><next-route-announcer style="position: absolute;"><template shadowrootmode="open"><div aria-live="assertive" id="__next-route-announcer__" role="alert" style="position: absolute; border: 0px; height: 1px; margin: -1px; padding: 0px; width: 1px; clip: rect(0px, 0px, 0px, 0px); overflow: hidden; white-space: nowrap; overflow-wrap: normal;"></div></template></next-route-announcer><span class="GUNS__ca-42ad2aff-c7e7db33-534468e1 " data-visible="false" data-placement="top" aria-hidden="true" role="tooltip" style="--tooltip-max-width: 260px; top: 0px; left: 0px; border-color: rgba(26, 26, 26, 0.2); background-color: rgba(20, 20, 20, 0.39);">UID 1,311,840</span><span class="GUNS__ca-42ad2aff-c7e7db33-534468e1 " data-visible="false" data-placement="top" aria-hidden="true" role="tooltip" style="--tooltip-max-width: 260px; top: 0px; left: 0px; border-color: rgba(26, 26, 26, 0.2); background-color: rgba(20, 20, 20, 0.39);">Profile Views</span><span class="GUNS__ca-42ad2aff-c7e7db33-534468e1 " data-visible="false" data-placement="top" aria-hidden="true" role="tooltip" style="--tooltip-max-width: 260px; top: 0px; left: 0px; border-color: rgba(26, 26, 26, 0.2); background-color: rgba(20, 20, 20, 0.39);">HypeSquad Bravery</span><span class="GUNS__ca-42ad2aff-c7e7db33-534468e1 " data-visible="false" data-placement="top" aria-hidden="true" role="tooltip" style="--tooltip-max-width: 260px; top: 0px; left: 0px; border-color: rgba(26, 26, 26, 0.2); background-color: rgba(20, 20, 20, 0.39);">Discord Nitro</span></body></html>
+</div><script>(self.__next_s=self.__next_s||[]).push([0,{"children":"const workerScript = `import init, { GunsSolver } from 'https://assets.guns.lol/wasm/gpp_gunslol.js';self.onmessage = async function (event) {const { _2xa, _org_ts, _n, d, o09 } = event.data;await init();const _get_s = new GunsSolver(o09, parseInt(d), _org_ts, _n, _2xa);const ts = Math.floor(Date.now() / 1000);const _tsoff = ts - Number(_org_ts);const tsp = ts - _tsoff;const _res = await _get_s.solve_pow();if (_res && _res._oo && _res.seal) {self.postMessage({ _n, o09, _res, _2xa, tsp });}};`;const blob = new Blob([workerScript], { type: \"application/javascript\" });const worker = new Worker(URL.createObjectURL(blob), { type: \"module\" });const _gs_sets = {_n: 'aJxcHnTeblvj3xca8Yjzm1IpJT5oBDNj',_tsp: null,_p: '',_seal: '',__ps: '',o09: '3c303c4db9d938049b0f5e1a901e9eb3aceb5e5876137969b0974f39a4aff2ce',_2xa: 'oUAFKDUfEgQEAwACASrMufjeQcnfNWYyZDllNWNiZjNhMDYzMDkyYzM4ZTg1NWVhZTMzYzEyMWE5MmE3OGZiNTgxYWUzMGZlZmJkYjg5MjD13sBpnVbXxg',__s: '3',_org_ts: \"1778956169\",};worker.postMessage({_n: _gs_sets._n,d: 5,_2xa: _gs_sets._2xa,o09: _gs_sets.o09,_org_ts: _gs_sets._org_ts});worker.onmessage = async function (event) {const { _res, o09, tsp, _n, _2xa } = event.data;if (_res !== undefined) {await getResult(_res);}};","id":"_gpp_2pkvinebmmlb"}])</script><div class="cf-turnstile" data-sitekey="0x4AAAAAAAgU7T2niLQD-TLm" data-callback="getToken" style="display: none;"><div><template shadowrootmode="closed"><iframe src="https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/b/turnstile/f/ov2/av0/rch/ihlyx/0x4AAAAAAAgU7T2niLQD-TLm/auto/fbE/new/normal?lang=auto" allow="cross-origin-isolated; fullscreen; autoplay; keyboard-map; gamepad" sandbox="allow-same-origin allow-scripts allow-popups" id="cf-chl-widget-ihlyx" tabindex="-1" title="Виджет с действием &quot;challenge&quot; Cloudflare" aria-hidden="true" style="border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; overflow: hidden; width: 1px; height: 1px; opacity: 0.01; position: fixed; left: 0px; top: 0px; visibility: visible; pointer-events: none; z-index: -1;"></iframe></template><input type="hidden" name="cf-turnstile-response" id="cf-chl-widget-ihlyx_response" value="0.Bu6Uxj2aztGIiCK3OyYt5NhJ6lHtbZLTqvFWYAoDWpEVbNmvQLFZLKxIZdNRcoLxtzVo0Ggf9S3Ukb03UET0MZbWCl8ir9-UQ6uf_wp7ewDuSNjIfdilME5MgAU2SW7L7D5_T3B_ZoqIa4ArOwOOQFcMX5vwnkyMv3JmR-8p4XoiiLhIxeDm65yDn_ZVhTtSNVOlOvTXrlOPoMSM5CairY0ntd1_aY6OeHDXaFQp1Xp2UtzTa7E4CjmeqttPerLGSTMuUF4ssjjkdIgjFsO60D2DbzPYYFjfm_UfDuZMYnNY57H7erl23_0hooWIjtBoIWZev9gBJn0Pp2Ty8y4bprXj6m5WnqpzhtqLav0-rdW7meIz5kaaDm83puxLfoa8RuC_0bzVaRvWq23mIWtkKvoFg8c4f8ue5sl8z7RzuSNk9m78A60zvrUu2ENFh81GXIn3CGSA_hH7c10hxwRMbeSPVevjRlLkmcpVItCBqK7fTGAU7kfSJ08-PkLO8BUiO2lGQRJUV5Q7QIMeXxzEOIDG9NsgFWSGWcytP7YiRYxOT_2s9USNmwvN6iwSIQqOzuTxm4ZjY2Rs6emhWraAymN9nMRJEaFB0Xaz-3LS9lOqmL4QkRMXzba8BcLiN2DaonegvpvoxqD1q2vI1nr8NAQYNiFeaRmNiQTPf20BDpqHLf5uRkjRatmR9aiw_5XQsM0Npfoz-kwpPEBDu4xYrNBEHTkvrRODVISG4meNDlLuQCvHBuNZS4excTM0Yx42glzX5AL8kREXWPr-h-MTM6sCFBegrmG7hGph2j1ZGCiCxV2o1_3Q1RfBi3G7CrTE5ED8L6RQ0UUdADnfRkyEOtK5pIfDZ5Q5SJjLsHJVepEQWJUnaN-HpT0v_Lm9rDw2P4Tvziu1djrQxBhnaRcPqVvkV0_9oIOKqdWZ9kNTYwCIHvaP9p1ZUJRJ3XuI0EYQ.8OhemXhBWB24rkCGfYqbPg.45806b5e3b231d57463976e769bae05f873459aa4cc1ca266d1c5a70f73a2d21"></div></div><div class="GUNS__c4-52afb1ed-980a1997-1f6253bb false" style="bottom: 12px; left: 15px;"><span class="GUNS__ba-7f5364ea-c3a36c5d-b0f3d011 "><span style="font-weight: 550; font-size: 14px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 9a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5a5 5 0 0 1 5-5a5 5 0 0 1 5 5a5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5"></path></svg> 215</span></span></div></div></div></div></div></div><script src="./@purrp_files/latest.js.Без названия" data-collect-dnt="true" id="_sa" data-nscript="afterInteractive"></script><script src="./@purrp_files/cursor-effects.js.Без названия" id="_cursor" data-nscript="afterInteractive"></script><div></div><script src="./@purrp_files/api.js.Без названия" id="_turnstile" data-nscript="afterInteractive"></script><next-route-announcer style="position: absolute;"><template shadowrootmode="open"><div aria-live="assertive" id="__next-route-announcer__" role="alert" style="position: absolute; border: 0px; height: 1px; margin: -1px; padding: 0px; width: 1px; clip: rect(0px, 0px, 0px, 0px); overflow: hidden; white-space: nowrap; overflow-wrap: normal;"></div></template></next-route-announcer><span class="GUNS__ca-42ad2aff-c7e7db33-534468e1 " data-visible="false" data-placement="top" aria-hidden="true" role="tooltip" style="--tooltip-max-width: 260px; top: 0px; left: 0px; border-color: rgba(26, 26, 26, 0.2); background-color: rgba(20, 20, 20, 0.39);">UID 1,311,840</span><span class="GUNS__ca-42ad2aff-c7e7db33-534468e1 " data-visible="false" data-placement="top" aria-hidden="true" role="tooltip" style="--tooltip-max-width: 260px; top: 0px; left: 0px; border-color: rgba(26, 26, 26, 0.2); background-color: rgba(20, 20, 20, 0.39);">Profile Views</span><span class="GUNS__ca-42ad2aff-c7e7db33-534468e1 " data-visible="false" data-placement="top" aria-hidden="true" role="tooltip" style="--tooltip-max-width: 260px; top: 0px; left: 0px; border-color: rgba(26, 26, 26, 0.2); background-color: rgba(20, 20, 20, 0.39);">HypeSquad Bravery</span><span class="GUNS__ca-42ad2aff-c7e7db33-534468e1 " data-visible="false" data-placement="top" aria-hidden="true" role="tooltip" style="--tooltip-max-width: 260px; top: 0px; left: 0px; border-color: rgba(26, 26, 26, 0.2); background-color: rgba(20, 20, 20, 0.39);">Discord Nitro</span><script id="purpl-autoplay-music">
+(function () {
+  var src = './@purrp_files/purpl-music.mp3';
+  var buttonSelector = '.GUNS__90-2f1123ac-d6ec9f60-17266127';
+  var triedAutoplay = false;
+  var bound = false;
+
+  function player() {
+    var audio = document.getElementById('purpl-music-player') || document.querySelector('audio');
+    if (!audio) {
+      audio = document.createElement('audio');
+      document.body.appendChild(audio);
+    }
+    audio.id = 'purpl-music-player';
+    if (!audio.src || audio.src.indexOf('purpl-music.mp3') === -1) audio.src = src;
+    audio.preload = 'auto';
+    audio.autoplay = true;
+    audio.loop = true;
+    audio.volume = 0.55;
+    audio.muted = false;
+    audio.setAttribute('autoplay', '');
+    audio.setAttribute('loop', '');
+    audio.setAttribute('playsinline', '');
+    return audio;
+  }
+
+  function sync() {
+    var audio = player();
+    var button = document.querySelector(buttonSelector);
+    if (!button) return;
+    var playing = !audio.paused;
+    button.classList.toggle('purpl-music-playing', playing);
+    button.classList.toggle('purpl-music-needs-click', triedAutoplay && !playing);
+    button.setAttribute('role', 'button');
+    button.setAttribute('tabindex', '0');
+    button.setAttribute('aria-label', playing ? 'Pause music' : 'Play music');
+    button.setAttribute('title', playing ? 'Pause music' : 'Play music');
+  }
+
+  function play(auto) {
+    if (auto) triedAutoplay = true;
+    var audio = player();
+    audio.muted = false;
+    var promise = audio.play();
+    if (promise && typeof promise.then === 'function') {
+      promise.then(sync).catch(sync);
+    } else {
+      sync();
+    }
+  }
+
+  function toggle(event) {
+    if (event && event.target && event.target.matches('input[type="range"]')) return;
+    if (event) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+    var audio = player();
+    if (audio.paused) play(false);
+    else {
+      audio.pause();
+      sync();
+    }
+  }
+
+  function bind() {
+    var audio = player();
+    var button = document.querySelector(buttonSelector);
+    if (button && !bound) {
+      bound = true;
+      button.addEventListener('click', toggle, true);
+      button.addEventListener('keydown', function (event) {
+        if (event.key === 'Enter' || event.key === ' ') toggle(event);
+      }, true);
+    }
+    audio.onplay = sync;
+    audio.onpause = sync;
+    audio.onplaying = sync;
+    audio.oncanplay = sync;
+    sync();
+  }
+
+  function boot() {
+    bind();
+    play(true);
+    setTimeout(function () { bind(); play(true); }, 350);
+    setTimeout(function () { bind(); play(true); }, 1200);
+    setInterval(sync, 700);
+  }
+
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot);
+  else boot();
+  window.addEventListener('load', function () { setTimeout(function () { bind(); play(true); }, 200); });
+})();
+</script></body></html>
